@@ -1,9 +1,13 @@
 package core.basesyntax;
 
-public class Figure implements Measurable, Drawable {
+public abstract class Figure implements Measurable, Drawable {
     private String color;
 
     public Figure(String color) {
         this.color = color;
+    }
+
+    public String getColor() {
+        return color;
     }
 }
